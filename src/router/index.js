@@ -3,6 +3,8 @@ import AccountsList from '../components/Accounts/List'
 import AccountView from '../components/Accounts/View'
 import AccountCreate from '../components/Accounts/Create'
 import AccountEdit from '../components/Accounts/Edit'
+import BanksList from '../components/Banks/List'
+import Login from '../components/Login/Form'
 
 const routes = [
     {
@@ -29,6 +31,16 @@ const routes = [
     {
         path: '/contas/:id/editar',
         component: AccountEdit
+    },
+
+    {
+        path: '/bancos',
+        component: BanksList
+    },
+
+    {
+        path: '/login',
+        component: Login
     }
 ]
 

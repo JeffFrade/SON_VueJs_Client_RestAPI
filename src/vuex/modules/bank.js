@@ -12,7 +12,7 @@ export default {
     },
 
     actions: {
-        getBanks (context) {
+        getBanks (context, config) {
             Vue.http.get('api/banks?limit=200').then(response => {
                 context.commit('updateBankList', response.data)
             })
